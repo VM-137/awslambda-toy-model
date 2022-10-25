@@ -1,4 +1,4 @@
-# awslambda-toy-model
+# Serverless AI Data Engineering Pipeline
 This is an example of a Serverless AI Data Engineering Pipeline.<br>
 With CloudWatch Timer we will invoke a AWS Lambda function(Producer) that reads a DynamoDB table and send each item as a message to a SQS queue, when a message feeds the queue a trigger will invoke a AWS Lambda function(Consumer) that will perform a request to Wikipedia API and ask for the first result and the first 2 lines of the content, then we will perform a sentiment analysis using AWS Compehend and store the results in a AWS S3 bucket.
 
